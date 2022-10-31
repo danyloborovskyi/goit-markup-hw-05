@@ -19,50 +19,53 @@
   </head>
   <body>
     <header>
-      <div class="container section-header">
-        <nav>
-          <ul class="list-navigation">
-            <li class="logo-header">
-              <a href="./index.html" class="logo-link"><span class="logo-web">Web</span>Studio</a>
+      <section class="section-header">
+        <div class="container header">
+          <nav>
+            <ul class="list-navigation">
+              <li class="logo-header">
+                <a href="./index.html" class="logo-link"><span class="logo-web">Web</span>Studio</a>
+              </li>
+              <li class="list-link-header">
+                <a href="index.html" class="link-header studio current-page">Студія</a>
+              </li>
+              <li class="list-link-header">
+                <a href="portfolio.html" class="link-header portfolio">Портфоліо</a>
+              </li>
+              <li class="list-link-header contacts">
+                <a href="index.html" class="link-header contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="section-header-contacts">
+            <li class="list-link-contact">
+              <a href="mailto:info@devstudio.com" class="link-contact email">
+                <svg class="icon-email" width="16" height="12">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="list-link-header">
-              <a href="index.html" class="link-header studio">Студія</a>
-            </li>
-            <li class="list-link-header">
-              <a href="portfolio.html" class="link-header portfolio">Портфоліо</a>
-            </li>
-            <li class="list-link-header contacts">
-              <a href="index.html" class="link-header contacts">Контакти</a>
+            <li class="list-link-contact phone">
+              <a href="tel:+380961111111" class="link-contact"
+                ><svg class="icon-phone" width="10" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="section-header-contacts">
-          <li class="list-link-contact">
-            <a href="mailto:info@devstudio.com" class="link-contact email">
-              <svg class="icon-email" width="16" height="12">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="list-link-contact phone">
-            <a href="tel:+380961111111" class="link-contact"
-              ><svg class="icon-phone" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
+        </div>
+      </section>
     </header>
     <main>
       <section class="hero-section">
         <div class="container hero">
-          <div class="background-hero">
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button-hero">Замовити послугу</button>
-          </div>
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="button-hero">
+            <div class="backdrop"></div>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="section-advantages">
@@ -121,25 +124,37 @@
           <h2 class="title-what-do-we-do">Чим ми займаємося</h2>
           <ul class="list-what-do-we-do">
             <li>
-              <img
-                src="./images/whatdowedo1.jpg"
-                width="370"
-                alt="людина кодить з двума екранами по схемі на папері"
-              />
+              <div class="image-what-do-we-do">
+                <img
+                  src="./images/whatdowedo1.jpg"
+                  width="370"
+                  alt="людина кодить з двума екранами по схемі на папері"
+                  class="description"
+                />
+                <p class="description-what-do-we-do">Десктопні додатки</p>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/whatdowedo2.jpg"
-                width="370"
-                alt="людина тримає телефон біля ноутбука"
-              />
+              <div class="image-what-do-we-do">
+                <img
+                  src="./images/whatdowedo2.jpg"
+                  width="370"
+                  alt="людина тримає телефон біля ноутбука"
+                  class="description"
+                />
+                <p class="description-what-do-we-do">Мобільні додатки</p>
+              </div>
             </li>
             <li>
-              <img
-                src="./images/whatdowedo3.jpg"
-                width="370"
-                alt="людина малює різнокольоровий шестикутник на айпаді"
-              />
+              <div class="image-what-do-we-do">
+                <img
+                  src="./images/whatdowedo3.jpg"
+                  width="370"
+                  alt="людина малює різнокольоровий шестикутник на айпаді"
+                  class="description"
+                />
+                <p class="description-what-do-we-do">Дизайнерські рішення</p>
+              </div>
             </li>
           </ul>
         </div>

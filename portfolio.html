@@ -19,42 +19,44 @@
   </head>
   <body>
     <header>
-      <div class="container section-header">
-        <nav>
-          <ul class="list-navigation">
-            <li class="logo-header">
-              <a href="./index.html" class="logo-link"><span class="logo-web">Web</span>Studio</a>
+      <section class="section-header">
+        <div class="container header">
+          <nav>
+            <ul class="list-navigation">
+              <li class="logo-header">
+                <a href="./index.html" class="logo-link"><span class="logo-web">Web</span>Studio</a>
+              </li>
+              <li class="list-link-header">
+                <a href="index.html" class="link-header studio">Студія</a>
+              </li>
+              <li class="list-link-header">
+                <a href="portfolio.html" class="link-header portfolio current-page">Портфоліо</a>
+              </li>
+              <li class="list-link-header contacts">
+                <a href="index.html" class="link-header contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="section-header-contacts">
+            <li class="list-link-contact">
+              <a href="mailto:info@devstudio.com" class="link-contact email">
+                <svg class="icon-email" width="16" height="12">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+                info@devstudio.com</a
+              >
             </li>
-            <li class="list-link-header">
-              <a href="index.html" class="link-header studio">Студія</a>
-            </li>
-            <li class="list-link-header">
-              <a href="portfolio.html" class="link-header portfolio">Портфоліо</a>
-            </li>
-            <li class="list-link-header contacts">
-              <a href="index.html" class="link-header contacts">Контакти</a>
+            <li class="list-link-contact phone">
+              <a href="tel:+380961111111" class="link-contact"
+                ><svg class="icon-phone" width="10" height="16">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="section-header-contacts">
-          <li class="list-link-contact">
-            <a href="mailto:info@devstudio.com" class="link-contact email">
-              <svg class="icon-email" width="16" height="12">
-                <use href="./images/icons.svg#icon-email"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="list-link-contact phone">
-            <a href="tel:+380961111111" class="link-contact"
-              ><svg class="icon-phone" width="10" height="16">
-                <use href="./images/icons.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
-      </div>
+        </div>
+      </section>
     </header>
     <main>
       <div class="container">
@@ -79,12 +81,19 @@
           </ul>
           <ul class="our-works">
             <li class="work-cards">
-              <a href="" class="link-main"
-                ><img
-                  src="./images/portfolio/technokryak.jpg"
-                  alt="Ноутбук з відкритим сайтом"
-                  width="370"
-                />
+              <a href="" class="link-main">
+                <div class="product-thumb">
+                  <img
+                    src="./images/portfolio/technokryak.jpg"
+                    alt="Ноутбук з відкритим сайтом"
+                    width="370"
+                  />
+                  <p class="cards-info">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                    Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи
+                    приватну особу.
+                  </p>
+                </div>
                 <div class="info-portfolio">
                   <h2 class="title">Технокряк</h2>
                   <p class="subtitle">Веб-сайт</p>
@@ -92,12 +101,14 @@
               </a>
             </li>
             <li class="work-cards">
-              <a href="" class="link-main"
-                ><img
-                  src="./images/portfolio/poster.jpg"
-                  alt="2 баскетболісти намагаються отримати м'яч"
-                  width="370"
-                />
+              <a href="" class="link-main">
+                <div>
+                  <img
+                    src="./images/portfolio/poster.jpg"
+                    alt="2 баскетболісти намагаються отримати м'яч"
+                    width="370"
+                  />
+                </div>
                 <div class="info-portfolio">
                   <h2 class="title">Постер New Orlean vs Golden Star</h2>
                   <p class="subtitle">Дизайн</p>
@@ -105,12 +116,14 @@
               </a>
             </li>
             <li class="work-cards">
-              <a href="" class="link-main"
-                ><img
-                  src="./images/portfolio/restoran-of-seafood.jpg"
-                  alt="Риба та назва поверх неї 'морська їжа'"
-                  width="370"
-                />
+              <a href="" class="link-main">
+                <div>
+                  <img
+                    src="./images/portfolio/restoran-of-seafood.jpg"
+                    alt="Риба та назва поверх неї 'морська їжа'"
+                    width="370"
+                  />
+                </div>
                 <div class="info-portfolio">
                   <h2 class="title">Ресторан Seafood</h2>
                   <p class="subtitle">Додаток</p>
@@ -118,12 +131,14 @@
               </a>
             </li>
             <li class="work-cards">
-              <a href="" class="link-main"
-                ><img
-                  src="./images/portfolio/project-prime.jpg"
-                  alt="Чорні навушники на білому фоні"
-                  width="370"
-                />
+              <a href="" class="link-main">
+                <div>
+                  <img
+                    src="./images/portfolio/project-prime.jpg"
+                    alt="Чорні навушники на білому фоні"
+                    width="370"
+                  />
+                </div>
                 <div class="info-portfolio">
                   <h2 class="title">Проєкт Prime</h2>
                   <p class="subtitle">Маркетинг</p>
@@ -131,8 +146,10 @@
               </a>
             </li>
             <li class="work-cards">
-              <a href="" class="link-main"
-                ><img src="./images/portfolio/project-boxes.jpg" alt="Дві коробки" width="370" />
+              <a href="" class="link-main">
+                <div>
+                  <img src="./images/portfolio/project-boxes.jpg" alt="Дві коробки" width="370" />
+                </div>
                 <div class="info-portfolio">
                   <h2 class="title">Проєкт Boxes</h2>
                   <p class="subtitle">Додаток</p>
@@ -140,12 +157,14 @@
               </a>
             </li>
             <li class="work-cards">
-              <a href="" class="link-main"
-                ><img
-                  src="./images/portfolio/inspiration-has-no-borders.jpg"
-                  alt="Екран з відкритим сайтом "
-                  width="370"
-                />
+              <a href="" class="link-main">
+                <div>
+                  <img
+                    src="./images/portfolio/inspiration-has-no-borders.jpg"
+                    alt="Екран з відкритим сайтом "
+                    width="370"
+                  />
+                </div>
                 <div class="info-portfolio">
                   <h2 class="title">Inspiration has no Borders</h2>
                   <p class="subtitle">Веб-сайт</p>

@@ -2,6 +2,9 @@
     --link-color-hover: #2196F3;
     --primary-color: #212121;
     --secondary-color: #757575;
+    --button-background: #2196F3;
+    --function: cubic-bezier(0.4, 0, 0.2, 1);
+    --duration-animation: 500ms;
 }
 body {
     font-family: Roboto, sans-serif;
@@ -44,11 +47,15 @@ button {
     margin: o;
 }
 /* header */
-header {
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #ECECEC;
 }
 
-.section-header {
+.container.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,12 +98,19 @@ nav {
     text-decoration: none;
     color: black;
     display: block;
+
+}
+
+.logo-header {
     padding-top: 24px;
     padding-bottom: 25px;
 }
 
 .list-link-header {
     margin-right: 50px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
 }
 
 .link-header {
@@ -107,11 +121,27 @@ nav {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition-property: color;
+    transition-duration: var(--duration-animation);
 
 }
 
 .link-header.portfolio {
     color: #2196F3;
+}
+
+.current-page::after {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--button-background);
+    bottom: -1px;
+    content: "";
+    border-radius: 2px;
 }
 
 .list-link-header.contacts {
@@ -121,6 +151,8 @@ nav {
 .link-header:hover,
 .link-header:focus {
     color: #2196F3;
+    transition-timing-function: var(--function);
+    transition-duration: var(--duration-animation);
 }
 
 .icon-email {
@@ -151,6 +183,8 @@ nav {
     letter-spacing: 0.02em;
     margin-left: 0;
     display: flex;
+    transition-property: color;
+    transition-duration: var(--duration-animation);
 }
 
 .list-link-contact {
@@ -165,8 +199,9 @@ nav {
 .link-contact:hover,
 .link-contact:focus {
     color: var(--link-color-hover);
+    transition-duration: var(--duration-animation);
+    transition-timing-function: var(--function);
 }
-
 /* main */
 h1 {
     display: none;
@@ -221,7 +256,47 @@ h1 {
 .work-cards {
     max-width: 370px;
 }
+.product-thumb {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.product-thumb::before {
+    position: absolute;
+    width: 370px;
+    height: 294px;
+    content: "";
+    background-color: rgba(33, 150, 243, 0.9);
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+.cards-info {
+    position: absolute;
+    padding: 63px 24px;
+    font-size: 18px;
+    line-height: 1.55;
+    bottom: 0;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    transform: translateY(100%);
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.work-cards:hover .product-thumb::before {
+    transform: translateY(0%);
+    transition-duration: var(--duration-animation);
+    transition-timing-function: var(--function);
+}
+.work-cards:hover .cards-info {
+    transform: translateY(0%);
+    transition-duration: var(--duration-animation);
+    transition-timing-function: var(--function);
+}
 .link-main {
     display: block;
     text-decoration: none;
