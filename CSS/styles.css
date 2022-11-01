@@ -184,7 +184,7 @@ margin-right: 0;
     background: #2F303A;
     text-align: center;
     align-items: center;
-    background-image: url(../images/hero.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 200px;
@@ -581,8 +581,8 @@ padding-bottom: 94px;
     left: 0;
     width: 100%;
     height: 100%;
+    transition: opacity 250ms, visibility 250ms;
 }
-
 .modal {
     position: absolute;
     display: flex;
