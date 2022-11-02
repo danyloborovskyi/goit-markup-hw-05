@@ -293,14 +293,14 @@ h1 {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-cards:hover .product-thumb::before,
-.work-cards:focus .product-thumb::before {
+.link-main:hover .product-thumb::before,
+.link-main:focus .product-thumb::before {
     transform: translateY(0%);
     transition-duration: var(--duration-animation);
     transition-timing-function: var(--function);
 }
-.work-cards:hover .cards-info,
-.work-cards:focus .cards-info {
+.link-main:hover .cards-info,
+.link-main:focus .cards-info {
     transform: translateY(0%);
     transition-duration: var(--duration-animation);
     transition-timing-function: var(--function);
